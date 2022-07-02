@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animated {
+    @apply transition-all duration-300 ease-in-out
+  }
+
+  h1 span {
+    @apply text-[#d5ac3a] font-extrabold
+  }
+}
