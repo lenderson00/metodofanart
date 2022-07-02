@@ -14,9 +14,11 @@ export const ButtonFixed: React.FC<Props> = ({ isVisible }) => {
 
   return (
     <AnimatePresence initial={false}> {isVisible && <motion.div className='fixed bottom-0   left-0 right-0  sm:px-0 '
-    initial={{ y: 300, opacity: 1 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 300, opacity: 1}}
+    initial={{ y: 20, opacity: 1 }}
+      animate={{ y: 0, opacity: 1,  }}
+      exit={{ y: 300, opacity: 1, }}
+      transition={{ type: "spring", stiffness: 40 }}
+      
     >
     <div className='bg-gradient-to-t from-[#f9f5f1]  to-transparent h-24'>
 
