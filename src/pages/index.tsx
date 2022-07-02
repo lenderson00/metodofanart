@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   const scrollY = useScrollPosition()
   return (
   <div className='pt-6 h-screen w-full'>
-    <Head> <SEO /> </Head>
+   <SEO />
     <div className='h-16 w-48 relative mx-auto my-6'>
       <Image src={'/img/logo.png'} objectFit="cover" layout='fill' alt="Logo Método FanArt" />
     </div>
