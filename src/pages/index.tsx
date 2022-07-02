@@ -12,8 +12,8 @@ const Home: NextPage = () => {
     <div className='h-16 w-48 relative mx-auto my-6'>
       <Image src={'/img/logo.png'} objectFit="cover" layout='fill' alt="Logo Método FanArt" />
     </div>
-    <div className='container mx-auto max-w-5xl  flex flex-row gap-16 mt-12 px-[5vw] sm:px-0'>
-      <div className='flex flex-col gap-4 flex-1'>
+    <div className='container mx-auto max-w-5xl flex-col-reverse flex md:flex-row gap-16 mt-12 px-[5vw] sm:px-0'>
+      <div className='flex flex-col gap-4 flex-1 -translate-y-8 sm:translate-y-0'>
         <h1 className='font-bold text-2xl'> Descubra Finalmente o Exato Método para <span>Aprender a Desenhar</span> os seus Personagens de Animes Favoritos, Mesmo se você não Nasceu com o Dom de Desenhar</h1>
 
         <p><b>Clique no botão abaixo </b> e dê o primeiro passo para descobrir o Método que ajudou mais de 100 mil pessoas de todas as idades a realizarem o sonho de aprender a desenhar.</p>
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </div>
       
       </div>
-      <div className='w-1/2 h-80 shadow-2xl rounded-xl overflow-hidden hover:scale-105 cursor-pointer animated' >
+      <div className='h-52 md:w-1/2 md:h-80 shadow-2xl rounded-xl overflow-hidden hover:scale-105 cursor-pointer animated' >
        <Image src={'/img/hero.png'}  width={612} height={400} alt="Logo Método FanArt"  />
       </div>
     </div>
@@ -33,9 +33,9 @@ const Home: NextPage = () => {
 
     <div className='bg-[#f9f5f1] mt-16 py-16 flex flex-col gap-8'>
       <div className='container mx-auto max-w-5xl  flex flex-col px-[5vw] sm:px-0'>
-        <div className='flex gap-16 '>
+        <div className='flex gap-16 flex-col md:flex-row '>
           <div>  
-            <div className=' text-[#5c4b1c] text-3xl font-bold w-full max-w-2xl '>
+            <div className=' text-[#5c4b1c] text-2xl md:text-3xl font-bold w-full max-w-2xl '>
             Ao aplicar o sistema completo do Método Fan Art 3.0 você será capaz de:
              </div>
             <ul className='mt-8 text-xl flex gap-4 flex-col'>
@@ -51,18 +51,18 @@ const Home: NextPage = () => {
             </ul>
 
           </div>
-          <div className='w-1/2 h-64 shadow-2xl rounded-xl overflow-hidden hover:scale-105 cursor-pointer animated' >
+          <div className='h-60 md:w-1/2 md:h-64 shadow-2xl rounded-xl overflow-hidden hover:scale-105 cursor-pointer animated' >
        <Image src={'/img/eron.png'}  width={612} height={460} alt="Logo Método FanArt"  />
       </div>
         </div>
 
 
-        <div className='flex gap-16 mt-16'>
-        <div className='w-1/2 h-64 shadow-2xl rounded-xl overflow-hidden hover:scale-105 cursor-pointer animated' >
+        <div className='flex gap-16 mt-16 flex-col md:flex-row'>
+        <div className='h-60 md:w-1/2 md:h-64 shadow-2xl rounded-xl overflow-hidden hover:scale-105 cursor-pointer animated' >
        <Image src={'/img/lucy.png'}  width={612} height={460} alt="Logo Método FanArt"  />
       </div>
           <div>  
-            <div className=' text-[#5c4b1c] text-3xl font-bold w-full max-w-2xl '>
+            <div className=' text-[#5c4b1c]  text-2xl md:text-3xl font-bold w-full max-w-2xl '>
             Ao aplicar o sistema completo do Método Fan Art 3.0 você será capaz de:
              </div>
             <ul className='mt-8 text-xl flex gap-4 flex-col'>
@@ -83,10 +83,10 @@ const Home: NextPage = () => {
 
 
         <div className='flex gap-8 mt-16 flex-col'> 
-            <div className=' text-[#5c4b1c] text-center text-3xl font-bold w-full max-w-3xl mx-auto '>
+            <div className=' text-[#5c4b1c] md:text-center text-2xl md:text-3xl font-bold w-full max-w-3xl mx-auto '>
             Você conseguirá tudo isso, independente se você:
              </div>
-            <ul className='text-xl flex gap-4 flex-col text-center'>
+            <ul className='text-xl flex gap-4 flex-col md:text-center'>
               <li>
               Não nasceu com o “dom de desenhar”.
               </li>
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
     <div className='h-32'>
 
     </div>
-    <ButtonFixed isVisible={scrollY > 500} />
+    <ButtonFixed isVisible={scrollY > 800} />
   </div>
   )
 }
