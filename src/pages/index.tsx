@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { ButtonFixed } from '../components/Button'
 import useScrollPosition from '@react-hook/window-scroll'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
 
@@ -18,9 +19,11 @@ const Home: NextPage = () => {
         <h1 className='font-bold text-2xl'> Descubra Finalmente o Exato Método para <span>Aprender a Desenhar</span> os seus Personagens de Animes Favoritos, Mesmo se você não Nasceu com o Dom de Desenhar</h1>
 
         <p><b>Clique no botão abaixo </b> e dê o primeiro passo para descobrir o Método que ajudou mais de 100 mil pessoas de todas as idades a realizarem o sonho de aprender a desenhar.</p>
-        <button className='bg-[#EAB215] text-xl font-bold text-white px-16 py-3 rounded-md shadow-lg shadow-[#b18c28]/20 animated hover:scale-105'>
-          Quero Desenhar Agora!
-        </button>
+        <Link href={'https://go.hotmart.com/Y72446213H?ap=5bdf'} >
+          <div className='bg-[#EAB215] text-xl font-bold text-white cursor-pointer px-16 py-3 rounded-md shadow-lg shadow-[#b18c28]/20 animated hover:scale-105'>
+          Quero Aprender a Desenhar!
+          </div>
+        </Link>
         <div className='mx-auto -translate-y-2' >
        <Image src={'/img/pay.svg'}  width={250} height={16} alt="Logo Método FanArt"  />
       </div>
