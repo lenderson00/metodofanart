@@ -4,13 +4,15 @@ import { ButtonFixed } from '../components/Button'
 import useScrollPosition from '@react-hook/window-scroll'
 import clsx from 'clsx'
 import Link from 'next/link'
+import Head from 'next/head'
+import { SEO } from '../components/SEO'
 
 const Home: NextPage = () => {
 
   const scrollY = useScrollPosition()
   return (
   <div className='pt-6 h-screen w-full'>
-    
+    <Head> <SEO /> </Head>
     <div className='h-16 w-48 relative mx-auto my-6'>
       <Image src={'/img/logo.png'} objectFit="cover" layout='fill' alt="Logo Método FanArt" />
     </div>
