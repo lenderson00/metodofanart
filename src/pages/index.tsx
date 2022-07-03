@@ -280,33 +280,36 @@ const Home: NextPage = () => {
 
     <div className='mt-8'>
       <Bonus
-        value={'R$ 147,00'} 
+        value={'R$ 167,00'} 
         left
         number={2}
-        title='O segredo de desenhar olhos'
-        text='Aqui nesse bônus, vou te ensinar a desenhar olhos com perfeição. Nele você aprenderá:'
-        items={['O segredo do traço perfeito de olhos. ', ' Dando vida aos olhos, e expressando emoções. ', 'Exercícios práticos para acelerar o aprendizado de olhos. ']}
+        title='Aquecimento e traço'
+        text='Uma aula completa com a Mayara para direcionar ainda mais a sua evolução no desenho de animes. Nele, você aprenderá: '
+        items={['Como Melhorar o Seu Traço em poucos minutos', 'Os maiores erros de quem está começando e como evitar', 'Como saber se você está evoluindo o seu traço?']}
       />
     </div>
 
     <div className='mt-8'>
       <Bonus
-        value={'R$ 147,00'} 
+        value={'Não Tem Preço ( CONTEÚDO EXCLUSIVO PARA ALUNOS DO MÉTODO FANART 3.0)'} 
         number={3}
-        title='O segredo de desenhar olhos'
-        text='Aqui nesse bônus, vou te ensinar a desenhar olhos com perfeição. Nele você aprenderá:'
-        items={['O segredo do traço perfeito de olhos. ', ' Dando vida aos olhos, e expressando emoções. ', 'Exercícios práticos para acelerar o aprendizado de olhos. ']}
+        title='Usando todos os módulos do curso em um desenho'
+        text='Com aproximadamente 2 horas, eu gravei um desenho meu em tempo real utilizando TODO CONTEÚDO que foi ensinado no curso. 
+        Aplicando cada módulo, cada aula e mostrando como é possível seguir o método do começo ao fim e fazer desenhos perfeitos'
       />
     </div>
 
     <div className='mt-8'>
       <Bonus
       left
-        value={'R$ 147,00'} 
+        value={'Não Tem Preço'} 
         number={4}
-        title='O segredo de desenhar olhos'
-        text='Aqui nesse bônus, vou te ensinar a desenhar olhos com perfeição. Nele você aprenderá:'
-        items={['O segredo do traço perfeito de olhos. ', ' Dando vida aos olhos, e expressando emoções. ', 'Exercícios práticos para acelerar o aprendizado de olhos. ']}
+        title='Certificado de Conclusão'
+        text='Você não irá apenas aprender a desenhar os seus personagens favoritos de anime.
+
+        Ao finalizar o curso, você receberá o seu certificado de conclusão de curso que poderá ser apresentado e usado onde você quiser.
+        
+        Será o seu símbolo de que você conseguiu completar a sua jornada e realizar o seu sonho.'
       />
     </div>
       <div className='flex items-center justify-center mt-12'>
