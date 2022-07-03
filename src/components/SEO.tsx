@@ -39,7 +39,7 @@ export const SEO: React.FC<SEOProps> = ({ title }) => {
       <meta name="twitter:site" content="metodofanart" />
       <meta name="twitter:creator" content="metodofanart" />
       <meta name="twitter:image:src" content="img/hero.png" />
-
+      <meta name="facebook-domain-verification" content="r7wlfdtcuoss39ecilrjmrz2ck9guf" />
       <meta name="og:title" content="Método Fanart 3.0" />
       <meta name="og:description"
           content="Criado especialmente para os fãs do desenho animado, o Método Fanart disponibiliza toda a estrutura utilizada pelos criadores dos personagens, para que você consiga desenhar perfeitamente." />
