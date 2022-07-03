@@ -8,6 +8,7 @@ import { SEO } from '../components/SEO'
 import { useEffect, useState } from 'react'
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
+import { click } from '../components/event'
 
 
 const ImagesComunidade = [
@@ -56,7 +57,9 @@ const Home: NextPage = () => {
         <h1 className='text-2xl font-bold'> Descubra Finalmente o Exato Método para <span>Aprender a Desenhar</span> os seus Personagens de Animes Favoritos, Mesmo se você não Nasceu com o Dom de Desenhar</h1>
 
         <p><b>Clique no botão abaixo </b> e dê o primeiro passo para descobrir o Método que ajudou mais de 100 mil pessoas de todas as idades a realizarem o sonho de aprender a desenhar.</p>
-        <Link href={'https://go.hotmart.com/Y72446213H?ap=5bdf'} >
+        <Link href={'https://go.hotmart.com/Y72446213H?ap=5bdf'} onClick={
+        () => click()
+      }>
           <div className='bg-[#EAB215] text-xl font-bold text-white cursor-pointer text-center py-3 rounded-md shadow-lg shadow-[#b18c28]/20 animated hover:scale-105'>
           Quero Aprender a Desenhar!
           </div>
@@ -423,7 +426,9 @@ e logo você verá a evolução nos detalhes e qualidade de seus desenhos.</p>
           <BlurImage src={'/img/39.png'}  />
         </div>
       </div>
-      <Link href={'https://go.hotmart.com/Y72446213H?ap=5bdf'}>
+      <Link href={'https://go.hotmart.com/Y72446213H?ap=5bdf'} onClick={
+        () => click()
+      }>
       
       <div className='flex items-center justify-center cursor-pointer'>
         <div className='relative h-[200px] w-96' >
