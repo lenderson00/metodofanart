@@ -266,7 +266,58 @@ const Home: NextPage = () => {
     </div>
 
     <div className='mt-4 px-[5vw] lg:px-0 bg-[#f9f5f1] py-12'>
-      Bonus
+    <h1 className='text-2xl font-bold text-center'>Além do curso completo <br /> vou disponibilizar <span>mais 4 Bônus</span></h1>
+    <div className='container max-w-5xl pb-16 mx-auto mt-12'>
+    <div className='mt-12'>
+      <Bonus
+        value={'R$ 147,00'} 
+        number={1}
+        title='O segredo de desenhar olhos'
+        text='Aqui nesse bônus, vou te ensinar a desenhar olhos com perfeição. Nele você aprenderá:'
+        items={['O segredo do traço perfeito de olhos. ', ' Dando vida aos olhos, e expressando emoções. ', 'Exercícios práticos para acelerar o aprendizado de olhos. ']}
+      />
+    </div>
+
+    <div className='mt-8'>
+      <Bonus
+        value={'R$ 147,00'} 
+        left
+        number={2}
+        title='O segredo de desenhar olhos'
+        text='Aqui nesse bônus, vou te ensinar a desenhar olhos com perfeição. Nele você aprenderá:'
+        items={['O segredo do traço perfeito de olhos. ', ' Dando vida aos olhos, e expressando emoções. ', 'Exercícios práticos para acelerar o aprendizado de olhos. ']}
+      />
+    </div>
+
+    <div className='mt-8'>
+      <Bonus
+        value={'R$ 147,00'} 
+        number={3}
+        title='O segredo de desenhar olhos'
+        text='Aqui nesse bônus, vou te ensinar a desenhar olhos com perfeição. Nele você aprenderá:'
+        items={['O segredo do traço perfeito de olhos. ', ' Dando vida aos olhos, e expressando emoções. ', 'Exercícios práticos para acelerar o aprendizado de olhos. ']}
+      />
+    </div>
+
+    <div className='mt-8'>
+      <Bonus
+      left
+        value={'R$ 147,00'} 
+        number={4}
+        title='O segredo de desenhar olhos'
+        text='Aqui nesse bônus, vou te ensinar a desenhar olhos com perfeição. Nele você aprenderá:'
+        items={['O segredo do traço perfeito de olhos. ', ' Dando vida aos olhos, e expressando emoções. ', 'Exercícios práticos para acelerar o aprendizado de olhos. ']}
+      />
+    </div>
+      <div className='flex items-center justify-center mt-12'>
+        <div className='relative h-48 w-[500px]' >
+          <BlurImage src={'/img/soma.png'} contain  />
+        </div>
+      </div>
+
+    </div>
+   
+
     </div>
 
 
@@ -293,7 +344,7 @@ const Home: NextPage = () => {
     </div>
 
     <div className='mt-4 px-[5vw] lg:px-0 bg-[#f9f5f1] py-12'>
-    <div className='container mx-auto max-w-5xl mt-12 px-[5vw] lg:px-0 pb-8'>
+    <div className='container max-w-5xl pb-8 mx-auto mt-12'>
     <h1 className='pb-12 text-2xl font-bold text-center'>Quem é sua professora Mayara?</h1>
       <div className='flex flex-col gap-8 lg:gap-16 md:flex-row'>
         <div className='relative w-full md:w-1/2 h-[450px] overflow-visible' >
@@ -472,6 +523,47 @@ const Mod: React.FC<ModProps> = ({number, text, title, left}) => {
       <div className='flex items-center justify-center'>
         <div className='relative w-80 h-80 ' >
         <Image src={`/img/mod${number}.png`} width={421} height={361} layout={'responsive'} alt="Logo Método FanArt" className='self-center'  />
+        </div>
+      </div>
+      
+     </div>    
+  )
+}
+
+type BonusProps = {
+  number: number
+  text: String
+  items?: string[]
+  value: string
+  title: String
+  left?: boolean
+}
+
+const Bonus: React.FC<BonusProps> = ({number, text, title, left, items, value}) => {
+  return (
+
+     <div className={clsx('flex gap-8 lg:gap-32  flex-col bg-white px-8 py-8 rounded-2xl', left ? 'sm:flex-row-reverse' : 'sm:flex-row')}>
+      <div className={clsx('flex flex-col gap-4 flex-1 justify-center  text-sm')}>
+        <h1 className='text-2xl font-bold'> <span>{title}</span></h1>
+
+        <p >{text}</p>
+
+        {
+          items && <>
+            <ul>
+              {items.map(item => {
+                return (
+                  <li key={item}>✔️ {item}</li>
+                ) 
+              })}
+            </ul>
+          </>
+        }
+        <p> Vendido separadamente por: <span className='font-bold text-[#d5ac3a]'>{value}</span></p>
+      </div>
+      <div className='flex items-center justify-center'>
+        <div className='relative w-64 h-64 ' >
+        <Image src={`/img/bonus${number}.png`} objectFit='contain'  layout={'fill'} alt="Logo Método FanArt" className='self-center'  />
         </div>
       </div>
       
