@@ -8,15 +8,12 @@ const tagManagerArgs = {
     gtmId: 'GTM-PPKCQR6'
 }
 
-
+if (document !== undefined) {
+  TagManager.initialize(tagManagerArgs)
+}
  
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    if (document !== undefined) {
-      TagManager.initialize(tagManagerArgs)
-    }
-  })
   
   return <Component {...pageProps} />
 }
