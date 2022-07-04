@@ -8,7 +8,7 @@ const tagManagerArgs = {
     gtmId: 'GTM-PPKCQR6'
 }
 
-if (document !== undefined) {
+if (typeof window === 'object') {
   TagManager.initialize(tagManagerArgs)
 }
  
